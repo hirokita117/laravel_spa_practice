@@ -9,8 +9,8 @@ final class WhiteCard extends Card implements EntityInterface {
     public function isBigger(Card $card): bool
     {
         if ($card instanceof WhiteCard) {
-            return $card->getNumber() < $this->number;
+            return $card->getNumber() < $this->getNumber();
         }
-        return true;
+        return false;
     }
 }
