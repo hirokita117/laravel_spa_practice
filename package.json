@@ -9,8 +9,9 @@
         "prod": "npm run production",
         "production": "mix --production",
         "prettier": "./node_modules/.bin/prettier './resources/**/*.{js,vue}' --write",
-        "eslint": "/node_modules/.bin/eslint './resources/**/*.{js,vue}' --fix",
-        "fix": "npm run prettier && npm run eslint",
+        "eslint": "./node_modules/.bin/eslint './resources/**/*.{js,vue}' --cache",
+        "eslint:fix": "npm run eslint -- --fix",
+        "fix": "npm run prettier && npm run eslint:fix",
         "prepare": "husky install"
     },
     "devDependencies": {
