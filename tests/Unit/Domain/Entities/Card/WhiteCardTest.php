@@ -2,8 +2,8 @@
 
 namespace Tests\Unit\Domain\Entities\Card;
 
-use PHPUnit\Framework\TestCase;
 use Domain\Entities\Card\WhiteCard;
+use PHPUnit\Framework\TestCase;
 
 class WhiteCardTest extends TestCase
 {

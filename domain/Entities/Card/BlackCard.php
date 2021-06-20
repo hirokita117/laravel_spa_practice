@@ -3,7 +3,6 @@
 namespace Domain\Entities\Card;
 
 use PHPMentors\DomainKata\Entity\EntityInterface;
-use Domain\Entities\Card\Card;
 
 final class BlackCard extends Card implements EntityInterface {
     public function isBigger(Card $card): bool
@@ -11,6 +10,7 @@ final class BlackCard extends Card implements EntityInterface {
         if ($card instanceof BlackCard) {
             return $card->getNumber() < $this->getNumber();
         }
+
         return false;
     }
 }
