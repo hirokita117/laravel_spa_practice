@@ -21,6 +21,7 @@
         "import/default": "off",
         "import/no-default-export": "error",
         "prettier/prettier": "error",
-        "import/no-named-as-default": "off"
+        "import/no-named-as-default": "off",
+        "indent": ["error", 2]
     }
 }
