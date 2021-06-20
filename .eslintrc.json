@@ -5,18 +5,16 @@
     },
     "extends": [
         "plugin:vue/essential",
-        "standard"
+        "eslint:recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:prettier/recommended"
     ],
     "parserOptions": {
         "ecmaVersion": 12,
         "sourceType": "module"
     },
-    "plugins": [
-        "vue",
-        "import",
-        "prettier",
-        "simple-import-sort"
-    ],
+    "plugins": ["vue", "import", "prettier", "simple-import-sort"],
     "rules": {
         "import/default": "off",
         "import/no-default-export": "error",
