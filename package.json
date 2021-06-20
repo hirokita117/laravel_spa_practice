@@ -11,7 +11,8 @@
         "prettier": "./node_modules/.bin/prettier './resources/**/*.{js,vue}' --write",
         "eslint": "./node_modules/.bin/eslint './resources/**/*.{js,vue}' --cache",
         "eslint:fix": "npm run eslint -- --fix",
-        "fix": "npm run prettier && npm run eslint:fix",
+        "php-cs-fixer": "./vendor/bin/php-cs-fixer --config=.php_cs.dist.php fix .",
+        "fix": "npm run prettier && npm run eslint:fix && npm run php-cs-fixer",
         "prepare": "husky install"
     },
     "devDependencies": {
@@ -51,7 +52,7 @@
     },
     "lint-staged": {
         "*.php": [
-            "vendor/bin/php-cs-fixer --config=.php_cs.dist.php fix"
+            "./vendor/bin/php-cs-fixer --config=.php_cs.dist.php fix"
         ],
         "*.json": [
             "./node_modules/.bin/prettier --write"
