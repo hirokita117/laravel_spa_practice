@@ -12,7 +12,10 @@
         "sourceType": "module"
     },
     "plugins": [
-        "vue"
+        "vue",
+        "import",
+        "prettier",
+        "simple-import-sort"
     ],
     "rules": {
     }
