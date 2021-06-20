@@ -1,7 +1,8 @@
 {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "amd": true
     },
     "extends": [
         "plugin:vue/essential",
@@ -17,9 +18,8 @@
     "plugins": ["vue", "import", "prettier", "simple-import-sort"],
     "rules": {
         "import/default": "off",
-        "import/no-default-export": "error",
+        "import/prefer-default-export": "error",
         "prettier/prettier": "error",
-        "import/no-named-as-default": "off",
-        "indent": ["error", 2]
+        "import/no-named-as-default": "off"
     }
 }
