@@ -29,5 +29,15 @@
     },
     "dependencies": {
         "vue-router": "^3.5.1"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.php": [
+            "vendor/bin/php-cs-fixer --config=.php_cs.dist.php fix"
+        ]
     }
 }
