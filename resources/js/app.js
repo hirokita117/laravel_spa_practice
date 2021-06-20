@@ -4,9 +4,9 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-import 'bootstrap';
-import Vue from 'vue';
-import router from './router';
+import "bootstrap";
+import Vue from "vue";
+import router from "./router";
 
 window.Vue = Vue;
 
@@ -30,7 +30,7 @@ window.Vue = Vue;
  */
 
 const app = new Vue({
-    el: '#app',
+    el: "#app",
     router: router,
 });
 
