@@ -47,6 +47,13 @@
     "lint-staged": {
         "*.php": [
             "vendor/bin/php-cs-fixer --config=.php_cs.dist.php fix"
+        ],
+        "*.json": [
+            "./node_modules/.bin/prettier --write"
+        ],
+        "*.{js,vue}": [
+            "./node_modules/.bin/prettier --write",
+            "./node_modules/.bin/eslint --fix"
         ]
     }
 }
