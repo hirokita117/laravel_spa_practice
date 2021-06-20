@@ -8,6 +8,9 @@
         "hot": "mix watch --hot",
         "prod": "npm run production",
         "production": "mix --production",
+        "prettier": "./node_modules/.bin/prettier './resources/**/*.{js,vue}' --write",
+        "eslint": "/node_modules/.bin/eslint './resources/**/*.{js,vue}' --fix",
+        "fix": "npm run prettier && npm run eslint",
         "prepare": "husky install"
     },
     "devDependencies": {
